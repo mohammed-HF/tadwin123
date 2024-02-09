@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        .container {
+            margin: 50px auto;
+            max-width: 800px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+        select {
+            margin-right: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Write your message:</h2>
+        <textarea id="message" placeholder="Write your message here..."></textarea>
+        <div>
+            <label for="formality">Formality:</label>
+            <select id="formality">
+                <option value="non-formal">Non Formal</option>
+                <option value="normal">Normal</option>
+                <option value="formal">Formal</option>
+            </select>
+            <label for="tone">Tone:</label>
+            <select id="tone">
+                <option value="serious">Serious</option>
+                <option value="aggressive">Aggressive</option>
+                <option value="curious">Curious</option>
+            </select>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
